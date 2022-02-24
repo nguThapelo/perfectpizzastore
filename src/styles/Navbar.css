@@ -4,8 +4,10 @@ header{
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    /* background-color: red; */
+    background-color: lightgreen;
     font-family: 'Courier New', Courier, monospace;
+    color: #000;
+    font-weight: bolder;
 
 }
 header .logo a{
@@ -23,27 +25,30 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
-    color: #555;
+    color: #000;
     padding: 0 15px;
 }
 nav ul li a:hover{
-    color: lightseagreen;
+    color: red;
 }
+
 nav .nav-cart{
     cursor: pointer;
     position: relative;
 }
+
 nav .nav-cart span{
     position: absolute;
     top:-12px;
     right: -7px;
-    background: crimson;
+    background: red;
     font-size: 10px;
     color: white;
     padding: 3px 5px;
     border-radius: 50%;
     z-index: -1;
 }
+
 header .menu,
 header .close{
     cursor: pointer;
