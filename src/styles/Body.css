@@ -175,7 +175,7 @@ nav ul li a:hover{
     background-color: lightgreen;
 }
 
-
+/* about us page */
 .aboutus {
     font-family: 'Courier New', Courier, monospace;
     border: 2px solid lightgreen;
@@ -185,6 +185,7 @@ nav ul li a:hover{
     margin-top: 3em;
 }
 
+/* contact us page */
 
 
 @media (max-width: 650px){

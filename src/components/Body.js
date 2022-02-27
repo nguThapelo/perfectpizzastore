@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/Body.css';
+import Form from './contactUsForm';
+import Login from './loginForm';
+import Register from './registerForm'
+
+
 
 const PAGE_PRODUCTS = 'products';
 const PAGE_CART = 'cart'
@@ -99,7 +104,9 @@ const Body = () => {
     )
     const renderContacts = () => (
         <>
-            <h1 className="caption">Contact Us herrrrrrr, add form to send us an email</h1>
+            <h1 className="caption">Fill in the form below to contact us</h1>
+            
+            <Form />
         </>
     )
 
@@ -141,14 +148,16 @@ const Body = () => {
 
     const renderLogin = () => (
         <>
-            <h1 className="caption">Login, add a login form</h1>
+            
+            <Login />
         </>
     )
 
     const renderRegister = () => (
         <>
-            <h1 className="caption">Register,
-                add a registering form</h1>
+            <h1 className="caption">Fill in the form to register</h1>
+
+                <Register />
         </>
     )
 

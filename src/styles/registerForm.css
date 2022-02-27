@@ -14,26 +14,28 @@
 }
 
 
-.name {
-    margin: 25px auto;
-    display: flex;
+ .name {
+     margin: 0 0 20px 35px;
+    display: flex; 
     position: relative;
-    justify-content: space-between;
-    width: 90%;
+     /* justify-content: space-between;  */
+    width: 55%;
     height: 40px;
+    outline-color: lightgreen;
+
     
-    input [type="text"]{
+    /* input [type="text"]{
         width: 40%;
-        margin: 0 20px 0 0;
+        margin: 0 20px 0 0; 
         padding: 15px;
         font-style: italic;    
         border: none;
         background: transparent;
         color: #434753;
         outline-color: lightgreen;
-    }
+    } */
 
-    label[for="firstName"]{
+    /* label[for="userName"]{
         position: absolute;
         top: -30px;
         left: 0;
@@ -43,15 +45,36 @@
         position: absolute;
         top: -30px;
         right: 190px;
-    }
+    } */
     
-}
+} 
+
+
+/* label[for="userName"]{
+    margin-left: 3em;
+} */
+
 
 label[for="email"]{
     margin-left: 3em;
 }
 
+label[for="userName"]{
+    margin-left: 3em;
+}
 
+.userName{
+    width: 50%;
+    margin: 0 0 20px 35px;
+    height: 40px;
+    padding: 15px;
+    font-style: italic;
+    border: 1px solid #434753;
+    background: transparent;
+    color: #434753;
+    outline-color: lightgreen;
+
+}
 
 .email{
     width: 50%;
@@ -73,14 +96,14 @@ label:not(#nameLabel){
     margin-bottom: 10px;
 }
 
-label[for="message"]{
+label[for="password"]{
     margin-left: 3em;
 }
 
-.message{
-    width: 80%;
+.password{
+    width: 50%;
     margin: 0 35px;
-    height: 100px;
+    height: 50px;
     padding: 15px;
     font-style: italic;
     border: 1px solid #434753;
@@ -89,7 +112,7 @@ label[for="message"]{
     outline-color: lightgreen;
 }
 
-.send{
+.register{
     width: 100px;
     margin: 30px 35px;
     height: 40px;
@@ -98,4 +121,8 @@ label[for="message"]{
     background: none;
     color: #000;
     cursor: pointer;
+}
+
+.register:hover {
+    background-color: lightgreen;
 }

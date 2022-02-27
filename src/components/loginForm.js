@@ -1,22 +1,22 @@
 import React from 'react'
-import '../styles/contactUsForm.css'
+import '../styles/loginForm.css'
 
-function contactUsForm() {
+function loginForm() {
 
 
-    const firstNameRef = null
+    const userNameRef = null
     const lastNameRef =  null
     const emailRef = null
-    const messageRef =  null
+    const passwordRef =  null
 
     
     const handleSubmit = (event) => {
         event.preventDefault()
         const data = {
-            firstName: firstNameRef.current.value,
+            userName: userNameRef.current.value,
             lastName: lastNameRef.current.value,
             email: emailRef.current.value,
-            message: messageRef.current.value
+            password: passwordRef.current.value
         }
         alert("tadaaa!: \n" + JSON.stringify(data) + "Your data 😎")
     }
@@ -26,25 +26,25 @@ function contactUsForm() {
            
             <form onSubmit={handleSubmit} className="form">
                 <div className="name">
-                    <label for="firstName" id="nameLabel">First Name</label>
+                    <label for="userName" id="nameLabel">User Name</label>
                     <input
                      
                         type="text" 
-                        id="firstName" 
-                        name="firstName"
-                        className="firstName" 
-                        ref={firstNameRef} 
+                        id="userName" 
+                        name="userName"
+                        className="userName" 
+                        ref={userNameRef} 
                         tabindex="1" 
                     />
                     
-                    <label for="lastName">Last name</label>
+                    {/* <label for="lastName">Last name</label>
                     <input  
                         type="text" 
                         id="lastName" 
                         className="lastName" 
                         ref={lastNameRef}
                         tabindex="2"  
-                    />
+                    /> */}
                 </div>
                 <label for="email">Email</label>
                 <input 
@@ -57,19 +57,22 @@ function contactUsForm() {
                 tabindex="3" 
                 />
 
-                <label for="message">Message</label>
-                <textarea 
-                placeholder="Start typing..." 
-                className="message" 
-                name="message"
-                ref={messageRef}
-                >
+<label for="password">Password</label>
+                <input 
+                type="password" 
+                name="password"
+                id="password"
+                className="password"
+                placeholder="***************"
+                ref={passwordRef}
+                tabindex="3" 
+                />
 
-                </textarea>
-                <button type="submit" className="send">Send</button>
+                
+                <button type="submit" className="login">Login</button>
             </form>
         </div>
     )
 }
 
-export default contactUsForm;
+export default loginForm;
