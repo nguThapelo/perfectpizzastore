@@ -139,7 +139,51 @@ nav ul li a:hover{
     background-color: lightgreen;
 }
 
+.btn3 {
+    cursor: pointer;
+    background-color: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: none;
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 12em;
+}
 
+.btn3:hover {
+    background-color: lightgreen;
+}
+
+.btn4 {
+    cursor: pointer;
+    background-color: none;
+    border: 1px solid #000;
+    border-radius: 8px;
+    background: none;
+    display: flex;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 16em;
+}
+
+.btn4:hover {
+    background-color: lightgreen;
+}
+
+
+.aboutus {
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid lightgreen;
+    width: 50%;
+    text-align: center;
+    margin-left: 20em;
+    margin-top: 3em;
+}
 
 
 

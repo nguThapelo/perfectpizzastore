@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import '../styles/Body.css';
 
-
 const PAGE_PRODUCTS = 'products';
 const PAGE_CART = 'cart'
 const PAGE_ABOUT = 'about';
 const PAGE_CONTACT = 'contact';
 const PAGE_LOGIN = 'login';
 const PAGE_REGISTER = 'register';
-
-
 
 const Body = () => {
 
@@ -94,12 +91,15 @@ const Body = () => {
     const renderAbout = () => (
         <>
             <h1 className="caption">About Us</h1>
+            <div className="aboutus">
+             <p>I am born in Soweto and slowly growing up to be one of the best Pizza in the Township. I come in various sizes and most of your favourite flavours. I hope you enjoy havingm me as i will enjoy being had by you, have  greate time and browse some of my flavours and pick a size that is fit for you alone, your family and friends. Enjoy Me!!! </p>
+
+            </div>
         </>
     )
     const renderContacts = () => (
         <>
             <h1 className="caption">Contact Us herrrrrrr, add form to send us an email</h1>
-
         </>
     )
 
@@ -124,15 +124,15 @@ const Body = () => {
 
     const renderCart = () => (
         <>
-            <h1 className="caption">Cart</h1>
+            <h1 className="caption">Checkout Products</h1>
             <div className="products">
                 {cart.map((product, index) => (
                     <div className="product" key={index}>
                         <h3> {product.name}</h3>
                         <img src={product.image} alt="" width="150px" />
                         <h4> {product.cost}</h4>
-                        <button className="btn2" onClick={() => removeFromCart(product)}>Remove From cart</button>
-                        <button className="btn2" onClick={() => buyProduct()}>Buy</button>
+                        <button className="btn3" onClick={() => removeFromCart(product)}>Remove From cart</button>
+                        <button className="btn4" onClick={() => buyProduct()}>Buy</button>
                     </div>
                 ))}
             </div>
@@ -142,27 +142,19 @@ const Body = () => {
     const renderLogin = () => (
         <>
             <h1 className="caption">Login, add a login form</h1>
-
-
         </>
     )
 
     const renderRegister = () => (
         <>
             <h1 className="caption">Register,
-
                 add a registering form</h1>
-
         </>
     )
-
-
 
     return (
         <div>
             <nav>
-
-
                 <div className="logo">
                     <h1>
                         <a href="/">
