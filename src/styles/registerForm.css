@@ -20,7 +20,7 @@
     position: relative;
      /* justify-content: space-between;  */
     width: 55%;
-    height: 40px;
+    height: 30px;
     outline-color: lightgreen;
 
     
@@ -66,7 +66,7 @@ label[for="userName"]{
 .userName{
     width: 50%;
     margin: 0 0 20px 35px;
-    height: 40px;
+    height: 30px;
     padding: 15px;
     font-style: italic;
     border: 1px solid #434753;
@@ -79,7 +79,7 @@ label[for="userName"]{
 .email{
     width: 50%;
     margin: 0 0 20px 35px;
-    height: 40px;
+    height: 30px;
     padding: 15px;
     font-style: italic;
     border: 1px solid #434753;
@@ -89,7 +89,7 @@ label[for="userName"]{
 
 }
 
-//have you ever used this selector before
+/*special styling*/
 
 label:not(#nameLabel){
     margin-left: 35px ;
@@ -103,7 +103,7 @@ label[for="password"]{
 .password{
     width: 50%;
     margin: 0 35px;
-    height: 50px;
+    height: 30px;
     padding: 15px;
     font-style: italic;
     border: 1px solid #434753;

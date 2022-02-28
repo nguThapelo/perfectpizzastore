@@ -4,8 +4,6 @@ import Form from './contactUsForm';
 import Login from './loginForm';
 import Register from './registerForm'
 
-
-
 const PAGE_PRODUCTS = 'products';
 const PAGE_CART = 'cart'
 const PAGE_ABOUT = 'about';
