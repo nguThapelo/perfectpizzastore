@@ -1,0 +1,10 @@
+.footer {
+    background-color: lightgreen;
+    font-family: 'Courier New', Courier, monospace;
+    height: 40px;
+    color: #000;
+    margin-bottom: 0.5em;
+    text-align: center;
+    justify-content: center;
+    position:-webkit-sticky;
+}

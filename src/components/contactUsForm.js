@@ -23,7 +23,8 @@ function contactUsForm() {
 
     return (
         <div  className="container">
-           
+                       <h1 className="caption">Fill in the form below to contact us</h1>
+
             <form onSubmit={handleSubmit} className="form">
                 <div className="name">
                     <label for="firstName" id="nameLabel">First Name</label>
